@@ -1,0 +1,215 @@
+.about-hero {
+  position: relative;
+  padding: 110px 0;
+  overflow: hidden;
+  color: white;
+}
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #3a3530 55%, #8b7d6b 100%);
+}
+.about-hero-bg::before {
+  content: "UW";
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  font-size: clamp(8rem, 22vw, 18rem);
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.06);
+  letter-spacing: -0.08em;
+}
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  animation: slideUp 0.7s ease-out;
+}
+.about-hero h1 {
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  color: white;
+}
+.about-hero p {
+  margin: 25px 0;
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.08rem;
+}
+
+.about-manifesto {
+  padding-top: 70px;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: stretch;
+}
+.about-visual {
+  min-height: 420px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #252525, #c8c1b5);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  position: relative;
+  overflow: hidden;
+}
+.about-visual::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  border-radius: 45% 45% 12px 12px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.18), rgba(0, 0, 0, 0.1));
+  left: 20%;
+  top: 10%;
+  transform: rotate(3deg);
+}
+.about-visual-mark {
+  position: relative;
+  z-index: 1;
+  font-size: 6rem;
+}
+.about-visual-tag {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--accent);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  z-index: 1;
+}
+.about-manifesto-card {
+  display: flex;
+  flex-direction: column;
+}
+.about-manifesto-card h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.05;
+  margin-bottom: 20px;
+  letter-spacing: -0.05em;
+}
+.about-signature {
+  margin-top: auto;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.about-signature strong {
+  font-weight: 800;
+}
+
+.timeline-section {
+  background: white;
+}
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--line);
+  z-index: 0;
+}
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
+.timeline-year {
+  display: inline-grid;
+  place-items: center;
+  width: fit-content;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  font-weight: 900;
+  font-size: 0.85rem;
+  align-self: flex-start;
+}
+.timeline-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.timeline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+.timeline-card strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.timeline-card p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.info-card h2 {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 20px;
+  letter-spacing: -0.05em;
+}
+.info-card p + p {
+  margin-top: 18px;
+}
+.stats-section {
+  background: var(--accent-soft);
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.stat-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+.stat-card strong {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+}
+.stat-card span {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}

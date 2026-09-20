@@ -1,0 +1,23 @@
+:root {
+  --bg: #131313;
+  --surface: #1b1c1c;
+  --surface-container: #1f2020;
+  --surface-container-high: #2a2a2a;
+  --text: #e4e2e1;
+  --muted: #8e9192;
+  --line: #353535;
+  --line-strong: #444748;
+  --accent: #f5f5dc;
+  --accent-soft: #2d2d2d;
+  --tertiary: #556b2f;
+  --tertiary-light: #b6d088;
+  --gold: #d4af37;
+  --success: #556b2f;
+  --danger: #ffb4ab;
+  --radius: 0px;
+  --shadow: none;
+  --max: 1280px;
+  --font-headline: 'Archivo Narrow', sans-serif;
+  --font-body: 'Chivo', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}

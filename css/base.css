@@ -1,0 +1,51 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+::selection {
+  background: var(--gold);
+  color: #131313;
+}
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+main {
+  min-height: calc(100vh - 145px);
+}
+
+/* Technical Utilities */
+.tech-border {
+  border: 1px solid #444748;
+}
+.tech-border-gold {
+  border: 1px solid #b6d088;
+}
+.tech-border-b {
+  border-bottom: 1px solid #444748;
+}
+.tech-border-t {
+  border-top: 1px solid #444748;
+}
+.muisca-pattern {
+  background-image: repeating-linear-gradient(45deg, rgba(182, 208, 136, 0.05) 0px, rgba(182, 208, 136, 0.05) 2px, transparent 2px, transparent 10px);
+}
+
