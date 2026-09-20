@@ -17,7 +17,7 @@ export function renderTienda() {
           </div>
           <h1 class="font-display-lg text-5xl sm:text-7xl md:text-9xl text-primary tracking-tighter uppercase leading-none">Nuestra<br>tienda</h1>
           <p class="font-body-lg text-on-surface-variant max-w-md border-l-2 border-tertiary pl-4">
-            Explora nuestras prendas y filtra por categoría. Diseños técnicos contemporáneos fusionados con auténtica iconografía Muisca.
+            Explora nuestras prendas y filtra por categoría. Diseños técnicos contemporáneos fusionados con auténtica iconografía Muisca
           </p>
         </div>
         <div class="w-48 h-48 md:w-64 md:h-64 shrink-0 border border-outline-variant p-2 relative z-10 bg-surface-container-lowest shadow-[8px_8px_0px_#b6d088]">
