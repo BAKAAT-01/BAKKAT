@@ -10,7 +10,7 @@ export function renderHome() {
         <!-- Slides -->
         <div class="absolute inset-0 z-0" id="heroTrack">
           <div class="hero-slide active absolute inset-0 transition-opacity duration-700 opacity-100">
-            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDB_n-7i5e7vT3E6gXg1d996m6-1eI4Qh7XoQvXh5z3R_i_j3gY2U4z_J_z2V2w1T9qW0m9a8D0z1P3lJ7w5sX2r9s3a8X9r5T1r5T0v0J5h3R9q4H7m0a1P9s5X8D7C4W9a0v6I4g3a1T9n8X7q8L9k2B1C2Y7U3f9s0_2P1h6');"></div>
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/img/imagen_carrusel_inicio.png');"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-background/30"></div>
             <div class="absolute inset-0 muisca-pattern opacity-20"></div>
           </div>

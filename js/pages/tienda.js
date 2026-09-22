@@ -21,7 +21,7 @@ export function renderTienda() {
           </p>
         </div>
         <div class="w-48 h-48 md:w-64 md:h-64 shrink-0 border border-outline-variant p-2 relative z-10 bg-surface-container-lowest shadow-[8px_8px_0px_#b6d088]">
-          <img alt="Logo BAKAAT" class="w-full h-full object-cover" src="${assetsPath}img/BAKAAT.png">
+          <img alt="Logo BAKAAT" class="w-full h-full object-cover" src="${assetsPath}img/logo_borado.jpg">
         </div>
       </header>
 
