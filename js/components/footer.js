@@ -6,7 +6,7 @@ export function renderFooter() {
       <div class="flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
           <a href="${homePath}" class="logo">
-            <img src="${assetsPath}img/BAKAAT.png" alt="BAKAAT" class="logo h-8 md:h-10">
+            <img src="${assetsPath}img/BAKAAT-LOGO.png" alt="BAKAAT" class="logo h-8 md:h-10">
           </a>
           <span class="text-outline hidden md:inline">|</span>
           <span class="text-outline uppercase">Ancestral Urban Streetwear · Bogotá D.C.</span>
