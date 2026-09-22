@@ -1,5 +1,6 @@
 import { renderNavbar, initNavbar } from "./components/navbar.js";
 import { renderFooter } from "./components/footer.js";
+import { renderCartDrawer, initCartDrawer } from "./components/cartDrawer.js";
 import { page } from "./utils/path.js";
 
 const routes = {
@@ -23,11 +24,13 @@ if (!route) {
         <p class="muted empty-spacing">La página que buscas no existe.</p>
         <a class="btn" href="index.html">Volver al inicio</a>
       </div>
-    </main>` + renderFooter();
+    </main>` + renderFooter() + renderCartDrawer();
   initNavbar();
+  initCartDrawer();
 } else {
   const module = await import(route.src);
-  app.innerHTML = renderNavbar() + module[route.render]() + renderFooter();
+  app.innerHTML = renderNavbar() + module[route.render]() + renderFooter() + renderCartDrawer();
   initNavbar();
+  initCartDrawer();
   if (route.init) module[route.init]();
 }

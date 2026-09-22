@@ -9,7 +9,7 @@ export function renderNavbar() {
       <div class="w-full px-margin-mobile md:px-margin-desktop flex justify-between items-center">
         <div class="flex items-center gap-4">
           <a href="${homePath}" class="logo block">
-            <img src="${assetsPath}img/BAKAAT-LOGO.png" alt="BAKAAT" class="logo h-8 md:h-10">
+            <img src="${assetsPath}img/brand/BAKAAT-LOGO.png" alt="BAKAAT" class="logo h-8 md:h-10">
           </a>
         </div>
         <nav class="hidden md:flex items-center gap-8">
@@ -30,7 +30,7 @@ export function renderNavbar() {
       <div class="nav-mobile-menu hidden fixed inset-0 bg-surface/95 z-50 flex-col p-8 gap-6 md:hidden" id="navLinks">
         <div class="flex justify-between items-center border-b border-outline-variant pb-4">
           <a href="${homePath}" class="logo">
-            <img src="${assetsPath}img/BAKAAT-LOGO.png" alt="BAKAAT" class="logo h-8">
+            <img src="${assetsPath}img/brand/BAKAAT-LOGO.png" alt="BAKAAT" class="logo h-8">
           </a>
           <button class="text-primary text-2xl" id="navClose">✕</button>
         </div>

@@ -4,7 +4,7 @@ import { money } from "../utils/format.js";
 
 export function productCard(product) {
   const imgSrc = product.imagen || product.galeria?.[0] || "";
-  const isUrl = imgSrc.startsWith("http");
+  const isUrl = imgSrc.includes("/");
 
   return `
     <article class="group relative tech-border border-outline-variant bg-surface-container-low overflow-hidden flex flex-col justify-between">

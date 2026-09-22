@@ -41,7 +41,7 @@ export function initProducto() {
   function render() {
     const color = producto.colores[state.colorIndex];
     const mainImg = producto.imagen || producto.galeria?.[0] || "";
-    const isUrl = mainImg.startsWith("http");
+    const isUrl = mainImg.includes("/");
 
     view.innerHTML = `
       <div class="px-margin-mobile md:px-margin-desktop py-8">
@@ -71,7 +71,7 @@ export function initProducto() {
             <!-- Thumbnails -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
               ${(producto.galeria || [mainImg]).map((g, i) => {
-                const tIsUrl = g.startsWith("http");
+                const tIsUrl = g.includes("/");
                 return `
                 <div class="aspect-square tech-border border-outline-variant bg-surface-container-low overflow-hidden cursor-pointer hover:border-tertiary transition-colors thumb-btn" data-img="${g}" role="button" tabindex="0" aria-label="Imagen ${i + 1} de ${producto.galeria?.length || 1}">
                   ${tIsUrl
@@ -208,7 +208,7 @@ export function initProducto() {
         const img = btn.dataset.img;
         const mainImgDiv = view.querySelector("#mainImgContainer > div");
         if (mainImgDiv) {
-          if (img.startsWith("http")) {
+          if (img.includes("/")) {
             mainImgDiv.style.backgroundImage = `url('${img}')`;
           } else {
             mainImgDiv.style.background = img;

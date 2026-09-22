@@ -62,7 +62,7 @@ export function initCarrito() {
           <div class="flex flex-col gap-4">
             ${items.map(p => {
               const imgSrc = p.imagen || p.galeria?.[0] || "";
-              const isUrl = imgSrc.startsWith("http");
+              const isUrl = imgSrc.includes("/");
 
               return `
                 <div class="bg-surface-container p-4 border border-outline-variant flex flex-col md:flex-row gap-6 relative group hover:border-tertiary transition-colors">

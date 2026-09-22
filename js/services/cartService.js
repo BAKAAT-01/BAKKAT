@@ -39,6 +39,7 @@ export function addToCart(id, variant = {}) {
   if (item) item.quantity += 1;
   else cart.push({ key, id, talla, color, colorHex, quantity: 1 });
   save(cart);
+  window.dispatchEvent(new CustomEvent("cartAdded", { detail: { id, talla, color } }));
 }
 
 export function updateQuantity(key, quantity) {

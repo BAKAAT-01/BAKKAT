@@ -10,7 +10,7 @@ export function renderHome() {
         <!-- Slides -->
         <div class="absolute inset-0 z-0" id="heroTrack">
           <div class="hero-slide active absolute inset-0 transition-opacity duration-700 opacity-100">
-            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/img/imagen_carrusel_inicio.png');"></div>
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/img/home/imagen_carrusel_inicio.png');"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-background/30"></div>
             <div class="absolute inset-0 muisca-pattern opacity-20"></div>
           </div>
@@ -203,10 +203,10 @@ export function renderHome() {
           </p>
           <form class="w-full max-w-md flex flex-col sm:flex-row gap-4" id="newsletterForm">
             <div class="flex-grow relative">
-              <input class="w-full bg-surface border-b-2 border-outline-variant focus:border-tertiary focus:outline-none text-on-surface font-label-technical text-label-technical px-3 py-4 transition-colors placeholder:text-outline-variant uppercase" placeholder="[ Input: DIRECCIÓN DE CORREO ELECTRÓNICO... ]" required type="email">
+              <input class="w-full bg-surface border-b-2 border-outline-variant focus:border-tertiary focus:outline-none text-on-surface font-label-technical text-label-technical px-3 py-4 transition-colors placeholder:text-outline-variant uppercase" placeholder="DIRECCIÓN DE CORREO ELECTRÓNICO..." required type="email">
             </div>
             <button class="px-8 py-4 bg-primary text-on-primary font-label-technical text-label-technical uppercase tracking-widest hover:bg-surface-tint transition-colors whitespace-nowrap" type="submit">
-              [ Botón: REGISTRARSE ]
+              REGISTRARSE
             </button>
           </form>
         </div>
