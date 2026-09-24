@@ -48,26 +48,26 @@ export const productos = [
   },
   {
     id: 3,
-    nombre: "MUISCA ESSENTIAL TEE",
-    precio: 89000,
-    categoria: "Heritage",
-    ref: "BK-TEE-001",
+    nombre: "BAKAAT TECHNICAL SET",
+    precio: 450000,
+    categoria: "Tech",
+    ref: "BK-TS-001",
     tallas: ["S", "M", "L", "XL"],
-    imagen: "",
+    imagen: "/img/productos/technical_set.png",
     colores: [
       { nombre: "Negro Carbón", hex: "#1f2020" },
-      { nombre: "Beige Tierra", hex: "#474836" }
+      { nombre: "Verde Teal", hex: "#494a38" }
     ],
     materiales: [
-      "Algodón peinado 240 g/m²",
-      "Estampa gráfica Tunjo Geometry",
-      "Costuras reforzadas de 1px"
+      "Tejido técnico de alto rendimiento",
+      "Costuras ergonómicas reforzadas",
+      "Detalles en verde teal"
     ],
     descripcion:
-      "Camiseta esencial en algodón de alto gramaje con impresión frontal de la iconografía Tunjo Geometry.",
-    rating: 4.9,
-    reviews: 156,
-    galeria: ["#1f2020", "#353535", "#131313"]
+      "Conjunto técnico de alto rendimiento con corte versátil, costuras ergonómicas y detalles en verde teal. Diseñado para moverse contigo.",
+    rating: 4.8,
+    reviews: 128,
+    galeria: ["#1f2020", "#494a38", "#131313"]
   },
   {
     id: 4,
