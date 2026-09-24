@@ -21,7 +21,6 @@ export const productos = [
       "Hoodie técnico de corte sobredimensionado en algodón francés de alto gramaje con bordados inspirados en la geometría sagrada Muisca.",
     rating: 4.9,
     reviews: 128,
-    galeria: ["#1f2020", "#131313", "#2a2a2a"]
   },
   {
     id: 2,
@@ -44,7 +43,6 @@ export const productos = [
       "Pantalón cargo relajado de corte amplio construido en Nylon Ripstop táctico con remaches industriales y bolsillos expansivos.",
     rating: 4.8,
     reviews: 94,
-    galeria: ["#494a38", "#2a2a2a", "#131313"]
   },
   {
     id: 3,
@@ -67,7 +65,6 @@ export const productos = [
       "Conjunto técnico de alto rendimiento con corte versátil, costuras ergonómicas y detalles en verde teal. Diseñado para moverse contigo.",
     rating: 4.8,
     reviews: 128,
-    galeria: ["#1f2020", "#494a38", "#131313"]
   },
   {
     id: 4,
@@ -90,7 +87,6 @@ export const productos = [
       "Jean rígido de 14oz con corte holgado y detalles de orfebrería en remaches dorados.",
     rating: 4.7,
     reviews: 82,
-    galeria: ["#2a2a2a", "#1b1c1c", "#353535"]
   },
   {
     id: 5,
@@ -112,7 +108,6 @@ export const productos = [
       "Hoodie negro mate con sutil aplicación de filigrana dorada en manga y capucha de doble panel.",
     rating: 5.0,
     reviews: 210,
-    galeria: ["#1f2020", "#131313", "#2a2a2a"]
   },
   {
     id: 6,
@@ -135,7 +130,6 @@ export const productos = [
       "Cargo técnico de silueta expansiva preparado para intemperie con hebillas de liberación rápida.",
     rating: 4.8,
     reviews: 67,
-    galeria: ["#1f2020", "#494a38", "#131313"]
   },
   {
     id: 7,
@@ -158,7 +152,6 @@ export const productos = [
       "Camiseta de caída pesada con gráfica Muisca de gran formato en la parte posterior.",
     rating: 4.9,
     reviews: 140,
-    galeria: ["#353535", "#1f2020", "#474836"]
   },
   {
     id: 8,
@@ -180,7 +173,6 @@ export const productos = [
       "Chaqueta rígida de corte arquitectónico construida para resistir el clima capitalino.",
     rating: 5.0,
     reviews: 95,
-    galeria: ["#1f2020", "#131313", "#2a2a2a"]
   }
 ];
 

@@ -40,7 +40,7 @@ export function initProducto() {
 
   function render() {
     const color = producto.colores[state.colorIndex];
-    const mainImg = producto.imagen || producto.galeria?.[0] || "";
+    const mainImg = producto.imagen || "";
     const isUrl = mainImg.includes("/");
 
     view.innerHTML = `
@@ -67,19 +67,6 @@ export function initProducto() {
               <div class="absolute bottom-4 right-4 bg-surface text-primary font-label-technical text-[10px] px-2 py-1 tech-border">
                 SPEC-SHEET
               </div>
-            </div>
-            <!-- Thumbnails -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              ${(producto.galeria || [mainImg]).map((g, i) => {
-                const tIsUrl = g.includes("/");
-                return `
-                <div class="aspect-square tech-border border-outline-variant bg-surface-container-low overflow-hidden cursor-pointer hover:border-tertiary transition-colors thumb-btn" data-img="${g}" role="button" tabindex="0" aria-label="Imagen ${i + 1} de ${producto.galeria?.length || 1}">
-                  ${tIsUrl
-                    ? `<div class="w-full h-full bg-cover bg-center" style="background-image: url('${g}')"></div>`
-                    : `<div class="w-full h-full" style="background:${g}"></div>`
-                  }
-                </div>`;
-              }).join("")}
             </div>
           </div>
 
@@ -200,27 +187,6 @@ export function initProducto() {
       btn.addEventListener("click", () => {
         state.talla = btn.dataset.talla;
         render();
-      });
-    });
-
-    view.querySelectorAll(".thumb-btn").forEach(btn => {
-      const swapImg = () => {
-        const img = btn.dataset.img;
-        const mainImgDiv = view.querySelector("#mainImgContainer > div");
-        if (mainImgDiv) {
-          if (img.includes("/")) {
-            mainImgDiv.style.backgroundImage = `url('${img}')`;
-          } else {
-            mainImgDiv.style.background = img;
-          }
-        }
-      };
-      btn.addEventListener("click", swapImg);
-      btn.addEventListener("keydown", e => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          swapImg();
-        }
       });
     });
 

@@ -104,7 +104,7 @@ export function initTienda() {
     }
 
     grid.innerHTML = list.map(p => {
-      const imgSrc = p.imagen || p.galeria?.[0] || "";
+      const imgSrc = p.imagen || "";
       const isUrl = imgSrc.includes("/");
 
       const imgContent = isUrl 

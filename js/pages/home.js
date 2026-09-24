@@ -3,6 +3,9 @@ import { addToCart } from "../services/cartService.js";
 import { basePath } from "../utils/path.js";
 
 export function renderHome() {
+  const featuredProducts = [productos.find(producto => producto.id === 1), productos.find(producto => producto.id === 2)];
+  const [mainProduct, secondaryProduct] = featuredProducts;
+
   return `
     <main class="pt-16 md:pt-20 flex-grow">
       <!-- Hero Carousel -->
@@ -15,7 +18,7 @@ export function renderHome() {
             <div class="absolute inset-0 muisca-pattern opacity-20"></div>
           </div>
           <div class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-0">
-            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEcOXoM66w22XK0rWGUsE3w9knMIPa3rdb3zCr3j3UKvpgMJPPzJTZLzs09ybepPXE2a0pMQohv3xVLbn6-iMP6ZOj5yWxDkAqpJhkwba6CRj55ScQkuFMpU2enrnQvhqBb4-MSUVzpxrtimouUehO1npezeKIt3iO_0_-yTTRhCxvBMUWN7_N6nvQZtVFOREOPtQj_QjSC1d34-NUfiqW2Y6mr3h2qfGYiGQIWpBKhkay83NuuoLnbA');"></div>
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/img/home/banner_web.png');"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-background/30"></div>
             <div class="absolute inset-0 muisca-pattern opacity-20"></div>
           </div>
@@ -152,20 +155,20 @@ export function renderHome() {
           <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
             <!-- Main Feature Product -->
             <div class="md:col-span-8 group relative tech-border border-outline-variant bg-surface-container-low overflow-hidden min-h-[400px] md:min-h-[500px] md:h-[600px] flex flex-col justify-end">
-              <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBh-TdUwlRvvOFungWvBc4JA3fsAsGE5MuemnA4hwqyD4VNdeFg0lI2YQGAgcpCbW3Y6ud6sl-qRlliZuz33QyN3Tnf3TO_FQImNworbcnQXFfioXLW4bpYzF2H1B7S4LjwzPazFpJWixr9ZhWq-Y77sDGDodxmOLxpZRRzStrDl77z4xnEfQKzWzvnxAbuP1XxgiwtFXKvuh0qk1aGeMSkwYDHBdmwm7SxXN-QX8M9z0XROKEzWnMdBw');"></div>
+              <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('${mainProduct.imagen}');"></div>
               <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface/40 to-transparent"></div>
               <div class="absolute top-6 left-6 flex gap-2">
-                <span class="px-2 py-1 bg-tertiary text-on-tertiary font-label-technical text-[10px] uppercase">HERITAGE / BGT-001</span>
+                <span class="px-2 py-1 bg-tertiary text-on-tertiary font-label-technical text-[10px] uppercase">${mainProduct.categoria} / ${mainProduct.ref}</span>
               </div>
               <div class="relative z-10 p-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
                 <div>
-                  <h4 class="font-display-lg text-2xl md:text-3xl text-on-surface uppercase mb-2">HOODIE "TUNJUELO" HEAVYWEIGHT</h4>
+                  <h4 class="font-display-lg text-2xl md:text-3xl text-on-surface uppercase mb-2">${mainProduct.nombre}</h4>
                   <div class="font-label-technical text-label-technical text-tertiary uppercase tracking-widest mb-2">
-                    <span>$320.000 COP</span> <span class="mx-2 text-outline">|</span> <span>Algodón Pesado 450 GSM</span>
+                    <span>${new Intl.NumberFormat("es-CO").format(mainProduct.precio)} COP</span> <span class="mx-2 text-outline">|</span> <span>${mainProduct.materiales[0]}</span>
                   </div>
-                  <p class="font-body-md text-sm text-on-surface-variant max-w-md">Relieve geométrico en espalda inspirado en la abstracción vectorial de figuras orfebres.<br><span class="text-[10px] text-outline italic">* Incluye macrofotografía de detalle de bordado al hacer hover.</span></p>
+                  <p class="font-body-md text-sm text-on-surface-variant max-w-md">${mainProduct.descripcion}</p>
                 </div>
-                <button class="add-to-cart-btn tech-border-gold px-6 py-3 bg-surface/80 backdrop-blur-md text-tertiary font-label-technical text-label-technical uppercase hover:bg-tertiary hover:text-on-tertiary transition-colors whitespace-nowrap" data-id="1">
+                <button class="add-to-cart-btn tech-border-gold px-6 py-3 bg-surface/80 backdrop-blur-md text-tertiary font-label-technical text-label-technical uppercase hover:bg-tertiary hover:text-on-tertiary transition-colors whitespace-nowrap" data-id="${mainProduct.id}">
                   [ AÑADIR A LA SELECCIÓN ]
                 </button>
               </div>
@@ -173,17 +176,17 @@ export function renderHome() {
 
             <!-- Secondary Feature Product -->
             <div class="md:col-span-4 group relative tech-border border-outline-variant bg-surface-container-low overflow-hidden min-h-[400px] md:min-h-[500px] md:h-[600px] flex flex-col">
-              <div class="h-2/3 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcI3UGWyeTFFxOyuYxKE1n9wzIR7VWfL97oHJBD4PcrWJ4BzklmZURZQycSAvyAU3AFG0dFoqy-9HAbTTtQvK9JXqYvpkD4DqZnxo3asIqEqu6OfZg8csa6nFnVvvIF0l8VH6BLvXvZLvqUrse8mRei_V7Gk82knO3AX2r3wJ77fcbcP92AeeEl6rb589UpeSqaHgOsKTaPpatbzKd3dZCd4ADG57m3MHWogMDho8BHrRFz74m4GFdqQ');"></div>
+              <div class="h-2/3 bg-cover bg-center relative" style="background-image: url('${secondaryProduct.imagen}');"></div>
               <div class="p-6 flex-grow flex flex-col justify-between bg-surface-container-low border-t border-outline-variant">
                 <div>
                   <div class="flex gap-2 mb-3">
-                    <span class="px-2 py-1 bg-tertiary text-on-tertiary font-label-technical text-[10px] uppercase">TECH / BGT-002</span>
+                    <span class="px-2 py-1 bg-tertiary text-on-tertiary font-label-technical text-[10px] uppercase">${secondaryProduct.categoria} / ${secondaryProduct.ref}</span>
                   </div>
-                  <h4 class="font-display-lg text-xl md:text-2xl text-on-surface uppercase mb-1">PANTALÓN CARGO TÁCTICO "ZIPA"</h4>
-                  <div class="font-label-technical text-label-technical text-on-surface-variant uppercase mb-2"><span>$280.000 COP</span> <span class="mx-2 text-outline">|</span> <span class="text-xs">Ripstop / Fit Relajado</span></div>
-                  <p class="font-body-md text-xs text-on-surface-variant">Bolsillos de volumen variable y herrajes metálicos de alta durabilidad.<br><span class="text-[10px] text-outline italic">* Ajuste de tobillo con pasador técnico.</span></p>
+                  <h4 class="font-display-lg text-xl md:text-2xl text-on-surface uppercase mb-1">${secondaryProduct.nombre}</h4>
+                  <div class="font-label-technical text-label-technical text-on-surface-variant uppercase mb-2"><span>${new Intl.NumberFormat("es-CO").format(secondaryProduct.precio)} COP</span> <span class="mx-2 text-outline">|</span> <span class="text-xs">${secondaryProduct.materiales[0]}</span></div>
+                  <p class="font-body-md text-xs text-on-surface-variant">${secondaryProduct.descripcion}</p>
                 </div>
-                <button class="add-to-cart-btn w-full mt-4 tech-border-gold px-4 py-2 bg-transparent text-tertiary font-label-technical text-[12px] uppercase hover:bg-tertiary hover:text-on-tertiary transition-colors" data-id="2">
+                <button class="add-to-cart-btn w-full mt-4 tech-border-gold px-4 py-2 bg-transparent text-tertiary font-label-technical text-[12px] uppercase hover:bg-tertiary hover:text-on-tertiary transition-colors" data-id="${secondaryProduct.id}">
                   [ AÑADIR A LA SELECCIÓN ]
                 </button>
               </div>

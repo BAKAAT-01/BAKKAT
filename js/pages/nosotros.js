@@ -73,7 +73,7 @@ export function renderNosotros() {
           </div>
         </div>
         <div class="col-span-1 md:col-span-7 relative min-h-[450px]">
-          <div class="absolute inset-0 bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAEcOXoM66w22XK0rWGUsE3w9knMIPa3rdb3zCr3j3UKvpgMJPPzJTZLzs09ybepPXE2a0pMQohv3xVLbn6-iMP6ZOj5yWxDkAqpJhkwba6CRj55ScQkuFMpU2enrnQvhqBb4-MSUVzpxrtimouUehO1npezeKIt3iO_0_-yTTRhCxvBMUWN7_N6nvQZtVFOREOPtQj_QjSC1d34-NUfiqW2Y6mr3h2qfGYiGQIWpBKhkay83NuuoLnbA');"></div>
+          <div class="absolute inset-0 bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" style="background-image: url('/img/herencia/la_naturaleza_dual.png');"></div>
           <div class="absolute bottom-4 right-4 bg-background border border-outline-variant px-3 py-1 font-label-technical text-on-surface-variant uppercase text-[10px]">
             FIG. 01 — TERRENO URBANO
           </div>

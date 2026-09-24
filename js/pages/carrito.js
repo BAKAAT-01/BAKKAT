@@ -61,7 +61,7 @@ export function initCarrito() {
 
           <div class="flex flex-col gap-4">
             ${items.map(p => {
-              const imgSrc = p.imagen || p.galeria?.[0] || "";
+              const imgSrc = p.imagen || "";
               const isUrl = imgSrc.includes("/");
 
               return `

@@ -3,7 +3,7 @@ import { basePath } from "../utils/path.js";
 import { money } from "../utils/format.js";
 
 export function productCard(product) {
-  const imgSrc = product.imagen || product.galeria?.[0] || "";
+  const imgSrc = product.imagen || "";
   const isUrl = imgSrc.includes("/");
 
   return `

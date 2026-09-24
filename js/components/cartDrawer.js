@@ -53,7 +53,7 @@ export function initCartDrawer() {
       footerEl.innerHTML = "";
     } else {
       itemsEl.innerHTML = items.map(p => {
-        const imgSrc = p.imagen || p.galeria?.[0] || "";
+        const imgSrc = p.imagen || "";
         const isUrl = imgSrc.includes("/");
         return `
           <div class="flex gap-4 py-4 border-b border-outline-variant">
