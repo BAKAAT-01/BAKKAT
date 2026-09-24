@@ -6,7 +6,7 @@ export const productos = [
     categoria: "Heritage",
     ref: "BK-HOD-001",
     tallas: ["S", "M", "L", "XL"],
-    imagen: "",
+    imagen: "/img/productos/hoodie tunjuelo.png",
     colores: [
       { nombre: "Negro Carbón", hex: "#1f2020" },
       { nombre: "Verde Oliva", hex: "#494a38" },
@@ -30,7 +30,7 @@ export const productos = [
     categoria: "Tech",
     ref: "BK-CRG-002",
     tallas: ["28", "30", "32", "34"],
-    imagen: "",
+    imagen: "/img/productos/cargo_zipa.png",
     colores: [
       { nombre: "Verde Táctico", hex: "#494a38" },
       { nombre: "Negro Carbón", hex: "#1f2020" }
