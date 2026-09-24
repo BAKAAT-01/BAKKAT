@@ -13,6 +13,9 @@ export function renderFooter() {
         </div>
         <div class="flex flex-wrap justify-center gap-6 uppercase">
           <a class="hover:text-tertiary transition-colors" href="${basePath}contacto.html">Contacto</a>
+          <a class="hover:text-tertiary transition-colors" href="https://www.instagram.com/bakaat_?stkn=MWNhejRkanJ1MnlvOA==" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a class="hover:text-tertiary transition-colors" href="https://x.com/Bakaat_" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+          <a class="hover:text-tertiary transition-colors" href="https://www.tiktok.com/@bakaat?_r=1&_t=ZS-99zIDdNwHie" target="_blank" rel="noopener noreferrer">TikTok</a>
         </div>
         <div class="text-outline uppercase text-[11px]">
           © ${new Date().getFullYear()} BAKAAT STUDIOS - BOGOTÁ D.C.

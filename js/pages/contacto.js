@@ -48,15 +48,15 @@ export function renderContacto() {
           <div class="pt-6 tech-border-t border-outline-variant">
             <span class="font-label-technical text-xs text-outline uppercase block mb-4">REDES SOCIALES / CANALES OFICIALES</span>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <a class="tech-border p-4 flex items-center justify-between hover:bg-surface-container-high transition-all font-label-technical text-xs text-on-surface" href="#">
+              <a class="tech-border p-4 flex items-center justify-between hover:bg-surface-container-high transition-all font-label-technical text-xs text-on-surface" href="https://www.instagram.com/bakaat_?stkn=MWNhejRkanJ1MnlvOA==" target="_blank" rel="noopener noreferrer">
                 <span>INSTAGRAM</span>
                 <span class="material-symbols-outlined text-tertiary text-sm">open_in_new</span>
               </a>
-              <a class="tech-border p-4 flex items-center justify-between hover:bg-surface-container-high transition-all font-label-technical text-xs text-on-surface" href="#">
+              <a class="tech-border p-4 flex items-center justify-between hover:bg-surface-container-high transition-all font-label-technical text-xs text-on-surface" href="https://x.com/Bakaat_" target="_blank" rel="noopener noreferrer">
                 <span>X / TWITTER</span>
                 <span class="material-symbols-outlined text-tertiary text-sm">open_in_new</span>
               </a>
-              <a class="tech-border p-4 flex items-center justify-between hover:bg-surface-container-high transition-all font-label-technical text-xs text-on-surface" href="#">
+              <a class="tech-border p-4 flex items-center justify-between hover:bg-surface-container-high transition-all font-label-technical text-xs text-on-surface" href="https://www.tiktok.com/@bakaat?_r=1&_t=ZS-99zIDdNwHie" target="_blank" rel="noopener noreferrer">
                 <span>TIKTOK</span>
                 <span class="material-symbols-outlined text-tertiary text-sm">open_in_new</span>
               </a>
